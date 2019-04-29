@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("First App ShadhiN"),
         ),
-        body:
-            ProductManager(), /*Column(
+        body: ProductManager(
+            "Food Tester"), /*Column(
             children: <Widget>[
               Container(
                 margin: EdgeInsets.all(10),
