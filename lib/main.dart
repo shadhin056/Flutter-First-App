@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
-
+import './product_manager.dart';
 //void main() => runApp(MyApp());
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _MyAppState();
-  }
-}
-
-class _MyAppState extends State<MyApp> {
-  List<String> _products = ["Food Tester"];
+class MyApp extends StatelessWidget {
+ /* List<String> _products = ["Food Tester"];*/
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +15,9 @@ class _MyAppState extends State<MyApp> {
           appBar: AppBar(
             title: Text("First App ShadhiN"),
           ),
-          body: Column(
+          body: ProductManager()
+
+        ,/*Column(
             children: <Widget>[
               Container(
                 margin: EdgeInsets.all(10),
@@ -37,8 +32,8 @@ class _MyAppState extends State<MyApp> {
                   },
                   child: Text("Add Product"),
                 ),
-              ),
-              Column(
+              ),*/
+            /*  Column(
                 children: _products
                     .map((element) => Card(
                           child: Column(
@@ -51,7 +46,8 @@ class _MyAppState extends State<MyApp> {
                     .toList(),
               ),
             ],
-          )),
+          )*/
+      ),
     );
   }
 }
