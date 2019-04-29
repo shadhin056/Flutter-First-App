@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import './products.dart';
 
-class ProductManager extends StatefulWidget{
+class ProductManager extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _ProductManagerState();
   }
-
 }
-class _ProductManagerState extends State<ProductManager>{
+
+class _ProductManagerState extends State<ProductManager> {
   List<String> _products = ["Food Tester"];
+
   @override
   Widget build(BuildContext context) {
-    return     Column(
+    return Column(
       children: <Widget>[
         Container(
           margin: EdgeInsets.all(10),
@@ -23,8 +23,6 @@ class _ProductManagerState extends State<ProductManager>{
                 _products.add("ShadhiN");
                 print(_products);
               });
-
-
             },
             child: Text("Add Product"),
           ),
@@ -45,5 +43,4 @@ class _ProductManagerState extends State<ProductManager>{
       ],
     );
   }
-
 }
